@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import routes from './routes';
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(express.json())
 // Query Params : Paginação, filtros, ordenação, etc
 
 app.use(routes);
+app.use(cors());
 
 app.listen(3333);
 
