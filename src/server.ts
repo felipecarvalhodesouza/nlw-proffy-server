@@ -17,9 +17,9 @@ app.use(express.json())
 // Corpo (ResquestBody) : Criação ou atualização  de um registro.
 // Route Params : Identificar qual recurso eu quero atualizar ou deletar.
 // Query Params : Paginação, filtros, ordenação, etc
-
-app.use(routes);
 app.use(cors());
+app.use(routes);
+
 
 app.listen(3333);
 
